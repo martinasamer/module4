@@ -1,0 +1,64 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Module 4 </title>
+       <script >          
+            (function (window){
+                var helloSpeaker={};
+            helloSpeaker.speakWord = "Hello";
+
+            helloSpeaker.speak= function (name) {
+            console.log(helloSpeaker.speakWord + " " + name);
+            }
+            window.helloSpeaker=helloSpeaker;
+
+
+            })(window);
+       </script>
+
+       <script >
+             (function (window){
+                var byeSpeaker={};
+            byeSpeaker.speakWord = "Good Bye";
+
+
+            byeSpeaker.speak= function(name) {
+            console.log(byeSpeaker.speakWord + " " + name);
+            }
+            window.byeSpeaker=byeSpeaker;
+
+            }
+            )(window);
+       </script>
+
+       <script >
+          (function () {
+
+            var names = ["Tom", "John", "Angly", "Aillen", "jano", "Mark", "steven", 
+            "Mary", "jim", "jena","Mina","Jackson","Maria","Jimmy",
+            "Adel","Catherine","Charlotte","Joseph","Jacoub"];
+
+            
+            for (var i = 0; i < names.length; i++) {
+
+            
+            var firstLetter = names[i].charAt(0).toLowerCase();
+
+            
+            if (firstLetter === 'j') {
+                byeSpeaker.speak(names[i]);
+            } else {
+                helloSpeaker.speak(names[i]);
+            }
+            }
+
+            })();
+       </script>
+
+    </head>
+    <body data-gr-c-s-loaded="true">
+      <h1>MODULE 4 SOLUTION STARTER</h1>
+      <h2>Please open console to see the output...!!</h2>
+
+    </body>
+</html>
